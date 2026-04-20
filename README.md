@@ -5,3 +5,9 @@ lalu parse stream yang yang dibaca BufReader ke variable http_request yang berup
 
 ## Commit 2
 ![Commit 2 screen capture](/assets/images/commit2.png)
+
+# Reflection 3
+disini kita perlu mengecek header request html, jika path ke root, maka assign ke hello html dengan status OK, namun jika path lain terlibat seperti /bad maka akan mereturn 404 NOT FOUND.
+
+## Commit 3
+![Commit 3 SS](/assets/images/commit3.png)
