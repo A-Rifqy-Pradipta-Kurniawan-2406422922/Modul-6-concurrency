@@ -14,3 +14,6 @@ disini kita perlu mengecek header request html, jika path ke root, maka assign k
 
 # Reflection 4
 saat load, browser menjadi berada dalam state load karena keberadaan sleep di code. kita assign sleep 10 detik sebelum broswer benar-benar load ke hello.html. dalam kasus banyak user, ini dapat digunakan untuk kasus dimana concurrency terjadi, biasanya pada war tiket dimana pengguna akan loading terlebih dahulu dan ditempatkan pada antrian.
+
+# Reflection 5
+ThreadPool bekerja dengan melakukan spawn beberapa worker(pool), dengan itu backend dapat menerima beberapa request sekaligus, membuat jika ada stall/user yang melakukan sleep backend tidak stuck di process tersebut dan worker lain yang akan menerima request dari orang lain tanpa menunggu sleep.
