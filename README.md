@@ -11,3 +11,6 @@ disini kita perlu mengecek header request html, jika path ke root, maka assign k
 
 ## Commit 3
 ![Commit 3 SS](/assets/images/commit3.png)
+
+# Reflection 4
+saat load, browser menjadi berada dalam state load karena keberadaan sleep di code. kita assign sleep 10 detik sebelum broswer benar-benar load ke hello.html. dalam kasus banyak user, ini dapat digunakan untuk kasus dimana concurrency terjadi, biasanya pada war tiket dimana pengguna akan loading terlebih dahulu dan ditempatkan pada antrian.
