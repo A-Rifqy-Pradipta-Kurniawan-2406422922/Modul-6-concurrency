@@ -17,3 +17,6 @@ saat load, browser menjadi berada dalam state load karena keberadaan sleep di co
 
 # Reflection 5
 ThreadPool bekerja dengan melakukan spawn beberapa worker(pool), dengan itu backend dapat menerima beberapa request sekaligus, membuat jika ada stall/user yang melakukan sleep backend tidak stuck di process tersebut dan worker lain yang akan menerima request dari orang lain tanpa menunggu sleep.
+
+# Bonus
+build digunakan untuk menambahkan aturan tambahan validasi, pada kasus ini digunakan untuk memastikan bahwa pool yang di buat harus lebih dari 0 dan akan ada fallback jika tidak memenuhi aturan instead of langsung error di programnya.
